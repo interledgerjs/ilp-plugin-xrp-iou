@@ -4,7 +4,7 @@ const { createSubmitter } = require('ilp-plugin-xrp-paychan-shared')
 const BigNumber = require('bignumber.js')
 const PluginPayment = require('ilp-plugin-payment')
 
-class PluginXrpPayment extends PluginPayment {
+class PluginXrpIou extends PluginPayment {
   constructor (opts) {
     super(opts)
 
@@ -125,4 +125,4 @@ class PluginXrpPayment extends PluginPayment {
   }
 }
 
-module.exports = PluginXrpPayment
+module.exports = PluginXrpIou
