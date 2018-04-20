@@ -1,0 +1,26 @@
+{
+  "name": "ilp-plugin-xrp-iou",
+  "version": "0.0.1",
+  "description": "ILP Plugin for XRP Ledger which settles via IOUs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/interledgerjs/ilp-plugin-xrp-iou.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/interledgerjs/ilp-plugin-xrp-iou/issues"
+  },
+  "homepage": "https://github.com/interledgerjs/ilp-plugin-xrp-iou#readme",
+  "dependencies": {
+    "bignumber.js": "^6.0.0",
+    "ilp-plugin-payment": "0.0.1",
+    "ilp-plugin-xrp-paychan-shared": "^3.0.3",
+    "ripple-keypairs": "^0.10.1",
+    "ripple-lib": "^0.21.0"
+  }
+}
