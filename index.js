@@ -3,6 +3,7 @@ const { deriveAddress, deriveKeypair } = require('ripple-keypairs')
 const { createSubmitter } = require('ilp-plugin-xrp-paychan-shared')
 const BigNumber = require('bignumber.js')
 const PluginPayment = require('ilp-plugin-payment')
+const crypto = require('crypto')
 
 class PluginXrpIou extends PluginPayment {
   constructor (opts) {
@@ -22,7 +23,7 @@ class PluginXrpIou extends PluginPayment {
     if (typeof opts.assetScale !== 'number') {
       throw new Error('asset scale must be a number if specified.' +
         ' type=' + (typeof opts.assetScale) +
-        ' value=' + assetScale)
+        ' value=' + opts.assetScale)
     }
 
     this._assetCode = opts.assetCode
